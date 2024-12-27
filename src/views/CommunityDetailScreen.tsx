@@ -117,7 +117,7 @@ const CommunityDetailScreen = () => {
                           src={
                             member
                               ? member.profilePic
-                              : "../../public/assets/images/defaultImage.png"
+                              : "/assets/images/defaultImage.png"
                           }
                           alt="creator"
                           style={{
@@ -147,7 +147,7 @@ const CommunityDetailScreen = () => {
                       })
                     }
                   }}>
-                    <img src="../../public/assets/icons/Export.svg" alt="" />
+                    <img src="/assets/icons/Export.svg" alt="" />
                   </button>
                   {currentUser?.id === community?.founder?.id ? (
                     <button

@@ -7,7 +7,7 @@ const NotificationPopup = (props: Props) => {
   return (
     <div className="flex absolute top-0 right-[-28rem] justify-start fade-in w-[24rem]">
       <img
-        src="../../public/assets/images/Polygon.svg"
+        src="/assets/images/Polygon.svg"
         alt=""
         className="absolute left-[-1.5rem]"
       />

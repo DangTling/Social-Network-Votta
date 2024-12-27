@@ -23,7 +23,7 @@ import { RingLoader } from "react-spinners";
 import { Button } from "@/components/ui/button.tsx";
 import { toast } from "react-toastify";
 import { seeAllPostOfUser } from "@/services/postService.ts";
-import lockIcon from "../../public/assets/lotties/lock-icon.json";
+import lockIcon from "@/assets/lotties/lock-icon.json";
 import Lottie from "react-lottie";
 import { useSocket } from "@/components/SocketContext";
 import { createNotification } from "@/redux/reducers/notificationSlice";
@@ -198,7 +198,7 @@ const ProfileScreen = () => {
             src={
               userFound?.profilePic
                 ? userFound?.profilePic
-                : "../../public/assets/images/defaultImage.png"
+                : "/assets/images/defaultImage.png"
             }
             alt="Avatar"
             className="w-28 h-28 lg:h-36 lg:w-36 rounded-full"
@@ -246,7 +246,7 @@ const ProfileScreen = () => {
                   className="h-12 bg-dark-4 px-5 text-light-1 flex-center gap-2 rounded-lg "
                 >
                   <img
-                    src="../../public/assets/icons/edit.svg"
+                    src="/assets/icons/edit.svg"
                     alt="Edit icon"
                     width={20}
                     height={20}
@@ -314,7 +314,7 @@ const ProfileScreen = () => {
       <div className="flex max-w-5xl w-full">
         <Link to="/profile" className="profile-tab rounded-l-lg bg-dark-3">
           <img
-            src="../../public/assets/icons/posts.svg"
+            src="/assets/icons/posts.svg"
             alt="Post icon"
             width={20}
             height={20}
@@ -323,7 +323,7 @@ const ProfileScreen = () => {
         </Link>
         <Link to="/profile" className="profile-tab rounded-r-lg bg-dark-3">
           <img
-            src="../../public/assets/icons/liked.svg"
+            src="/assets/icons/liked.svg"
             alt="Liked icon"
             width={20}
             height={20}

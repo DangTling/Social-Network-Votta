@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import PostStatus from "@/components/PostStatus.tsx";
 import {useState} from "react";
 import Lottie from "react-lottie";
-import love from "../../public/assets/lotties/new-heart.json"
+import love from "@/assets/lotties/new-heart.json"
 import {useSelector} from "react-redux";
 import {interactPost} from "@/services/postService.ts";
 import {toast} from "react-toastify";
@@ -57,14 +57,14 @@ const PostCardForCommunity = ({post}:any) => {
         <div className='post-card'>
             
             <Link to={`/community/${post?.belongsTo?.id}`} className="flex items-center gap-[0.5rem] mb-3">
-                <img src="../../public/assets/icons/group.svg" alt="" loading="lazy" />
+                <img src="/assets/icons/group.svg" alt="" loading="lazy" />
                 <p className="subtle-semibold lg:small-regular">{post?.belongsTo?.name}</p>
             </Link>
     
             <div className="flex-between">
                 <div className="flex items-center gap-3">
                     <Link to={`/profile/${post?.postedBy?.username}`}>
-                        <img src={post?.postedBy?.profilePic ? post?.postedBy?.profilePic : "../../public/assets/images/logo-no-background.svg"} alt="avatar user" loading="lazy"
+                        <img src={post?.postedBy?.profilePic ? post?.postedBy?.profilePic : "/assets/images/logo-no-background.svg"} alt="avatar user" loading="lazy"
                              className="rounded-full w-12 lg:h-12"/>
                     </Link>
                     <div className="flex flex-col">
@@ -78,7 +78,7 @@ const PostCardForCommunity = ({post}:any) => {
                     </div>
                 </div>
                 <Link to='/update-post'>
-                    <img src="../../public/assets/icons/edit.svg" alt="Edit icons" width={20} height={20} loading="lazy"/>
+                    <img src="/assets/icons/edit.svg" alt="Edit icons" width={20} height={20} loading="lazy"/>
                 </Link>
             </div>
             <Link to={`/posts/${post?.id}/${post?.postedBy?.id}`}>
@@ -90,7 +90,7 @@ const PostCardForCommunity = ({post}:any) => {
                 </div>
             </Link>
             <div className="post-image-container" onDoubleClick={handleDoubleClick}>
-                <img src={post?.postPic ? post?.postPic : "../../public/assets/images/logo-no-background.svg"} alt="post image" loading="lazy" className="post-card_img" />
+                <img src={post?.postPic ? post?.postPic : "/assets/images/logo-no-background.svg"} alt="post image" loading="lazy" className="post-card_img" />
                 {showAnimation && (
                     <div className="animation-overlay">
                         <Lottie options={option}/>

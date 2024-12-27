@@ -45,11 +45,11 @@ const PostStatus = ({post, like, count, onStatusChange}:any) => {
     return (
         <div className="flex justify-between items-center z-20">
             <div className="flex gap-2 mr-5" onClick={handleClick}>
-                <img src={isLiked ? "../../public/assets/icons/liked.svg" : "../../public/assets/icons/like.svg"} alt="Like icon" width={20} height={20}/>
+                <img src={isLiked ? "/assets/icons/liked.svg" : "/assets/icons/like.svg"} alt="Like icon" width={20} height={20}/>
                 <p className="small-medium lg:base-medium">{likeCount}</p>
             </div>
             <div className="flex gap-1" onClick={handleSave}>
-                <img src={isSaved ? "../../public/assets/icons/saved.svg" : "../../public/assets/icons/save.svg"} alt="Save icon" width={20} height={20}/>
+                <img src={isSaved ? "/assets/icons/saved.svg" : "/assets/icons/save.svg"} alt="Save icon" width={20} height={20}/>
             </div>
         </div>
     );

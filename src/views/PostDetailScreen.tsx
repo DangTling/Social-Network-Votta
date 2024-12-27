@@ -11,7 +11,7 @@ import {
 import { RingLoader } from "react-spinners";
 import Lottie from "react-lottie";
 import { toast } from "react-toastify";
-import newLove from "../../public/assets/lotties/new-heart.json";
+import newLove from "@/assets/lotties/new-heart.json";
 import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
 import UserChatRow from "@/components/Comment";
@@ -215,7 +215,7 @@ const PostDetailScreen = () => {
             className="shad-button_ghost"
           >
             <img
-              src="../../public/assets/icons/Reply.svg"
+              src="/assets/icons/Reply.svg"
               alt="back"
               width={28}
               height={28}
@@ -251,7 +251,7 @@ const PostDetailScreen = () => {
               src={
                 post?.postPic
                   ? post?.postPic
-                  : "../../public/assets/images/logo-no-background.svg"
+                  : "/assets/images/logo-no-background.svg"
               }
               alt="post detail iamge"
               className="post_details-img"
@@ -275,7 +275,7 @@ const PostDetailScreen = () => {
                 src={
                   post?.postedBy?.profilePic
                     ? post?.postedBy?.profilePic
-                    : "../../public/assets/images/logo-no-background.svg"
+                    : "/assets/images/logo-no-background.svg"
                 }
                 alt="avatar image"
                 className="rounded-full w-8 h-8 lg:h-12 lg:w-12 overflow-hidden"
@@ -293,7 +293,7 @@ const PostDetailScreen = () => {
             <div className="flex-center gap-1">
               <Link to={`/edit-post/${postId}`}>
                 <img
-                  src="../../public/assets/icons/edit.svg"
+                  src="/assets/icons/edit.svg"
                   alt="edit icon"
                   width={24}
                   height={24}
@@ -305,7 +305,7 @@ const PostDetailScreen = () => {
                 onClick={handleDeletePost}
               >
                 <img
-                  src="../../public/assets/icons/delete.svg"
+                  src="/assets/icons/delete.svg"
                   alt="delete icon"
                   width={24}
                   height={24}
@@ -372,7 +372,7 @@ const PostDetailScreen = () => {
                 ></textarea>
                 <button type="button" onClick={handleSubmit}>
                   <img
-                    src="../../public/assets/icons/send.svg"
+                    src="/assets/icons/send.svg"
                     alt="Send Icon"
                     width={20}
                     height={20}

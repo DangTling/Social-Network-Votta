@@ -26,7 +26,7 @@ const AuthLayout = () => {
                 className="flex flex-1 justify-center items-center flex-col py-10 px-5">
                 <Outlet/>
             </section>
-            <img src="../../public/assets/images/engineering-1088615_1920.jpg" alt="logo" className="hidden sm:block h-screen w-1/2 object-cover bg-no-repeat"/>
+            <img src="/assets/images/engineering-1088615_1920.jpg" alt="logo" className="hidden sm:block h-screen w-1/2 object-cover bg-no-repeat"/>
         </>
     )
 

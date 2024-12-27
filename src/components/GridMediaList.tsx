@@ -73,12 +73,12 @@ const GridMediaList = ({userId}:any) => {
                 {posts.map((post:any,id:any) => (
                 <li className="relative min-w-80 h-80" key={id}>
                     <Link to={`/posts/${post.id}/${userId}`} className="grid-post_link">
-                        <img src={post?.postPic ? post?.postPic : "../../public/assets/images/logo-no-background.svg"} alt="Post Image"
+                        <img src={post?.postPic ? post?.postPic : "/assets/images/logo-no-background.svg"} alt="Post Image"
                              className="w-full h-full object-cover"/>
                     </Link>
                     <div className="grid-post_user">
                         <div className="flex items-center justify-start gap-2 flex-1">
-                            <img src={post?.postedBy?.profilePic ? post?.postedBy?.profilePic : "../../public/assets/images/logo-no-background.svg"} alt="Avatar image"
+                            <img src={post?.postedBy?.profilePic ? post?.postedBy?.profilePic : "/assets/images/logo-no-background.svg"} alt="Avatar image"
                                  className="w-8 h-8 rounded-full"/>
                             <p className="line-clamp-1">{post?.postedBy?.name}</p>
                         </div>

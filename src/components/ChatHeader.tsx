@@ -24,7 +24,7 @@ const ChatHeader = ({ loading, userChatWith, onBack, socket, currentUser }) => {
       <div className="flex-1 flex items-center" onClick={onBack}>
         <img
           className="w-6 h-6 text-white cursor-pointer"
-          src="../../public/assets/icons/arrow-left.svg"
+          src="/assets/icons/arrow-left.svg"
         />
         {loading ? (
           <span className="animate-pulse ml-4 text-[16px] text-lg h-3 w-40 font-semibold bg-gray-200 rounded-full dark:bg-gray-700"></span>
@@ -34,10 +34,10 @@ const ChatHeader = ({ loading, userChatWith, onBack, socket, currentUser }) => {
           </span>
         )}
       </div>
-      <img src="../../public/assets/icons/Phone_light.svg" alt="" className="w-7 h-7 mr-2 text-white cursor-pointer" onClick={()=>handleStartCall(userChatWith?.id)}/>
+      <img src="/assets/icons/Phone_light.svg" alt="" className="w-7 h-7 mr-2 text-white cursor-pointer" onClick={()=>handleStartCall(userChatWith?.id)}/>
       <img
         className="w-6 h-6 text-white cursor-pointer"
-        src="../../public/assets/icons/info.svg"
+        src="/assets/icons/info.svg"
       />
     </div>
   );

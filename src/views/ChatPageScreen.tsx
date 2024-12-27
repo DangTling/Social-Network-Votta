@@ -51,7 +51,7 @@ const ChatPageScreen = () => {
           <h2 className="h3-bold md:h2-bold w-full">Your Conversations</h2>
           <div className="flex gap-1 px-4 w-full rounded-lg bg-dark-4 ">
             <img
-              src="../../public/assets/icons/add-contact.svg"
+              src="/assets/icons/add-contact.svg"
               alt="search icon"
               width={24}
               height={24}
@@ -87,7 +87,7 @@ const ChatPageScreen = () => {
               <form className="w-[95%] mx-auto mt-4">
                 <div className="relative">
                   <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                    <img src="../../public/assets/icons/add-contact.svg" alt="" />
+                    <img src="/assets/icons/add-contact.svg" alt="" />
                   </div>
                   <input
                     type="search"
@@ -126,7 +126,7 @@ const ChatPageScreen = () => {
             ) : (
               <section className="flex flex-1 justify-center items-center flex-col py-10 px-5">
                 <img
-                  src="../../public/assets/images/Bubble chat.svg"
+                  src="/assets/images/Bubble chat.svg"
                   alt=""
                   className=" object-cover bg-no-repeat"
                 />

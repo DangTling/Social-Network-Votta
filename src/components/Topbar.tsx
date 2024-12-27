@@ -23,23 +23,23 @@ const Topbar = () => {
         <section className="topbar">
             <div className="flex-between py-4 px-5">
                 <Link to='/' className="flex gap-3 items-center">
-                    <img src="../../public/assets/images/logo-no-background.svg" alt="Logo votta" width={130}
+                    <img src="/assets/images/logo-no-background.svg" alt="Logo votta" width={130}
                          height={325}/>
                 </Link>
                 <div className="flex gap-4">
                     <Button variant="ghost" className="shad-button_ghost" onClick={handleSignOut}>
-                        <img src="../../public/assets/icons/logout.svg" alt="Logout logo"/>
+                        <img src="/assets/icons/logout.svg" alt="Logout logo"/>
                     </Button>
                     <Link to='/chat' className="flex-center ">
-                        <img src='../../public/assets/icons/messenger.svg' alt="Profile image"
+                        <img src='/assets/icons/messenger.svg' alt="Profile image"
                              className="h-6 w-6 rounded-full"/>
                     </Link>
                     <Link to='/notifications' className="flex-center">
-                        <img src='../../public/assets/icons/Bell_pin.svg' alt="Profile image"
+                        <img src='/assets/icons/Bell_pin.svg' alt="Profile image"
                              className="h-6 w-6 rounded-full"/>
                     </Link>
                     <Link to='/profile' className="flex-center gap-3">
-                        <img src={currentUser?.profilePic ? currentUser?.profilePic : "../../public/assets/images/profile.png"} alt="Profile image"
+                        <img src={currentUser?.profilePic ? currentUser?.profilePic : "/assets/images/profile.png"} alt="Profile image"
                              className="h-8 w-8 rounded-full"/>
                     </Link>
                 </div>

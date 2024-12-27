@@ -216,7 +216,7 @@ const BubbleChat = ({
                 >
                   <div className="w-8 h-8 rounded-full bg-white align-middle justify-center flex mr-3">
                     <img
-                      src="../../public/assets/icons/Folder_check.svg"
+                      src="/assets/icons/Folder_check.svg"
                       alt=""
                     />
                   </div>
@@ -260,7 +260,7 @@ const BubbleChat = ({
                 >
                   <div className="w-8 h-8 rounded-full bg-white align-middle justify-center flex mr-3">
                     <img
-                      src="../../public/assets/icons/Folder_check.svg"
+                      src="/assets/icons/Folder_check.svg"
                       alt=""
                     />
                   </div>

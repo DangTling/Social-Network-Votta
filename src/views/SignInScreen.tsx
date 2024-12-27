@@ -50,7 +50,7 @@ const SignInScreen = () => {
     <Form {...form}>
       <div className="sm:w-420 flex-col flex-center">
         <img
-          src="../../public/assets/images/logo-no-background.svg"
+          src="/assets/images/logo-no-background.svg"
           alt="logo"
         />
         <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">

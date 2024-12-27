@@ -37,7 +37,7 @@ const ChatFooter = ({
           </div>
           <div className="align-middle flex rounded-full">
             <img
-              src="../../public/assets/icons/Close_round_duotone.svg"
+              src="/assets/icons/Close_round_duotone.svg"
               alt=""
               className="object-fill cursor-pointer scale-125"
               onClick={() => dispatch(setReplyPopup(null))}
@@ -67,7 +67,7 @@ const ChatFooter = ({
               }}
             />
             <img
-              src="../../public/assets/icons/image-send.svg"
+              src="/assets/icons/image-send.svg"
               alt="Send"
               className="w-6 h-6"
             />
@@ -77,7 +77,7 @@ const ChatFooter = ({
             onClick={() => setOpenEmoji(!openEmoji)}
           >
             <img
-              src="../../public/assets/icons/like.svg"
+              src="/assets/icons/like.svg"
               className="w-6 h-6 text-white cursor-pointer ml-4"
             />
           </div>

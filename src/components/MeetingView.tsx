@@ -110,13 +110,13 @@ const MeetingView = ({ currentUserId, participantIsCalling, socket, dispatch, jo
         >
           {micStatus ? (
             <img
-              src="../../public/assets/icons/Mic.svg"
+              src="/assets/icons/Mic.svg"
               alt=""
               className="object-cover w-8 h-8"
             />
           ) : (
             <img
-              src="../../public/assets/icons/Mic_fill.svg"
+              src="/assets/icons/Mic_fill.svg"
               alt=""
               className="object-cover w-8 h-8"
             />
@@ -134,7 +134,7 @@ const MeetingView = ({ currentUserId, participantIsCalling, socket, dispatch, jo
           }}
         >
           <img
-            src="../../public/assets/icons/Phone_fill.svg"
+            src="/assets/icons/Phone_fill.svg"
             alt=""
             className="object-cover w-8 h-8"
           />
@@ -149,7 +149,7 @@ const MeetingView = ({ currentUserId, participantIsCalling, socket, dispatch, jo
           }}
         >
           <img  
-            src="../../public/assets/icons/Camera_fill.svg"
+            src="/assets/icons/Camera_fill.svg"
             alt=""
             className="object-cover w-8 h-8"
           />

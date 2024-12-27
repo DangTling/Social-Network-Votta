@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PostStatus from "@/components/PostStatus.tsx";
 import { useState } from "react";
 import Lottie from "react-lottie";
-import love from "../../public/assets/lotties/new-heart.json";
+import love from "@/assets/lotties/new-heart.json";
 import { useDispatch, useSelector } from "react-redux";
 import { interactPost } from "@/services/postService.ts";
 import { toast } from "react-toastify";
@@ -101,7 +101,7 @@ const PostCard = ({ post, pending, confirmPost }: any) => {
               src={
                 post?.postedBy?.profilePic
                   ? post?.postedBy?.profilePic
-                  : "../../public/assets/images/logo-no-background.svg"
+                  : "/assets/images/logo-no-background.svg"
               }
               alt="avatar user"
               loading="lazy"
@@ -121,7 +121,7 @@ const PostCard = ({ post, pending, confirmPost }: any) => {
         
         <Link to={`/edit-post/${post?.id}`}>
           <img
-            src="../../public/assets/icons/edit.svg"
+            src="/assets/icons/edit.svg"
             alt="Edit icons"
             width={20}
             height={20}
@@ -148,7 +148,7 @@ const PostCard = ({ post, pending, confirmPost }: any) => {
           src={
             post?.postPic
               ? post?.postPic
-              : "../../public/assets/images/logo-no-background.svg"
+              : "/assets/images/logo-no-background.svg"
           }
           alt="post image"
           loading="lazy"

@@ -12,7 +12,7 @@ const ChatRow = ({conversation, selectConversation}) => {
         }}>
         <Link to={`/chat/${participant[0].id}`} className='flex items-center gap-3 md:w-full' >
             <img
-                src={conversation && participant[0].profilePic ? participant[0].profilePic : "../../public/assets/images/defaultImage.png"}
+                src={conversation && participant[0].profilePic ? participant[0].profilePic : "/assets/images/defaultImage.png"}
                 alt="avatar image"
                 className="rounded-full w-14 h-14"/>
             <div className="flex flex-col ml-1">

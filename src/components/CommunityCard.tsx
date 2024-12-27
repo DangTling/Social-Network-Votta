@@ -18,13 +18,13 @@ const CommunityCard = (props: {
     return (
         <Link to={`/community/${props.id}`} className="user-card relative" style={{paddingLeft:"0",paddingRight:"0", paddingTop:"0", overflow:"hidden", gap:"0.5rem", paddingBottom:"0.5rem"}}>
             <section className="w-full h-[117px] mb-3">
-                <img src={props.profilePic ? props.profilePic : "../../public/assets/images/defaultImage.png"} alt="creator" className="object-cover h-[100%] w-full"/>
+                <img src={props.profilePic ? props.profilePic : "/assets/images/defaultImage.png"} alt="creator" className="object-cover h-[100%] w-full"/>
             </section>
             <section className="flex absolute justify-center items-center">
                 {
                     showMembers.map((member:any, index:any)=>(
                         <section className="rounded-full w-10 h-10 bg-black" style={{zIndex:20-index, translate:-12*(index-Math.floor(showMembers.length/2))}} key={index}>
-                            <img src={member ? member.profilePic : "../../public/assets/images/defaultImage.png"} alt="creator" style={{objectFit:"cover", width:"36px", height:"36px", borderRadius:"999px", marginLeft:"2px", marginTop:"2px"}}/>
+                            <img src={member ? member.profilePic : "/assets/images/defaultImage.png"} alt="creator" style={{objectFit:"cover", width:"36px", height:"36px", borderRadius:"999px", marginLeft:"2px", marginTop:"2px"}}/>
                         </section>
                     ))
                 }

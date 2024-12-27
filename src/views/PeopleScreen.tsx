@@ -101,7 +101,7 @@ const CommunityScreen = () => {
       <div className="home-container" style={{paddingBottom:0}}>
         <div className="home-posts relative" style={{overflow: "hidden"}}>
           <button className="absolute top-0 right-0 w-12 h-12 rounded-full bg-primary-500 flex justify-center items-center z-30" onClick={() => navigate("/create-community")}>
-            <img src="../../public/assets/icons/group_add_fill.svg" alt="" className="w-8 h-8" />
+            <img src="/assets/icons/group_add_fill.svg" alt="" className="w-8 h-8" />
           </button>
           <section className="w-full flex gap-0 relative pb-2">
             <h2

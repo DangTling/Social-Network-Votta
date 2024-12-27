@@ -30,7 +30,7 @@ const Sidebar = ({dispatch, page, setPage, currentUser, statusComp, listNotify, 
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="../../public/assets/images/logo-no-background.svg"
+            src="/assets/images/logo-no-background.svg"
             alt="logo image"
             width={170}
             height={36}
@@ -41,7 +41,7 @@ const Sidebar = ({dispatch, page, setPage, currentUser, statusComp, listNotify, 
             src={
               currentUser?.profilePic
                 ? currentUser?.profilePic
-                : "../../public/assets/images/defaultImage.png"
+                : "/assets/images/defaultImage.png"
             }
             alt="user image"
             className="h-14 w-14 rounded-full"
@@ -112,7 +112,7 @@ const Sidebar = ({dispatch, page, setPage, currentUser, statusComp, listNotify, 
         className="shad-button_ghost md:mt-8"
         onClick={handleSignOut}
       >
-        <img src="../../public/assets/icons/logout.svg" alt="Logout icon" />
+        <img src="/assets/icons/logout.svg" alt="Logout icon" />
         <p className="small-medium lg:base-medium">Logout</p>
       </Button>
     </nav>

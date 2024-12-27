@@ -66,7 +66,7 @@ const SignUpScreen = () => {
     return (
         <Form {...form}>
             <div className="sm:w-420 flex-col flex-center">
-                <img src="../../public/assets/images/logo-no-background.svg" alt="logo"/>
+                <img src="/assets/images/logo-no-background.svg" alt="logo"/>
                 <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">
                     Create a new account
                 </h2>

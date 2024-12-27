@@ -70,7 +70,7 @@ const UserList = (props: any) => {
                       src={
                         member.profilePic
                           ? member.profilePic
-                          : "../../public/assets/images/defaultImage.png"
+                          : "/assets/images/defaultImage.png"
                       }
                       alt="user image"
                       className="h-14 w-14 rounded-full"

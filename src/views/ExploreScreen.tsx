@@ -111,7 +111,7 @@ const ExploreScreen = () => {
         <h2 className="h3-bold md:h2-bold w-full">Search users</h2>
         <div className="flex gap-1 px-4 w-full rounded-lg bg-dark-4 ">
           <img
-            src="../../public/assets/icons/search.svg"
+            src="/assets/icons/search.svg"
             alt="search icon"
             width={24}
             height={24}
@@ -130,7 +130,7 @@ const ExploreScreen = () => {
         <div className="flex-center gap-3 bg-dark-3 rounded-lg px-4 py-2 cursor-pointer">
           <p className="small-medium md:base-medium text-light-2">All</p>
           <img
-            src="../../public/assets/icons/filter.svg"
+            src="/assets/icons/filter.svg"
             alt="filter icon"
             width={20}
             height={20}
@@ -212,7 +212,7 @@ const ExploreScreen = () => {
                       src={
                         post?.postPic
                           ? post?.postPic
-                          : "../../public/assets/images/logo-no-background.svg"
+                          : "/assets/images/logo-no-background.svg"
                       }
                       alt="Post Image"
                       className="w-full h-full object-cover"
@@ -224,7 +224,7 @@ const ExploreScreen = () => {
                         src={
                           post?.postedBy?.profilePic
                             ? post?.postedBy?.profilePic
-                            : "../../public/assets/images/logo-no-background.svg"
+                            : "/assets/images/logo-no-background.svg"
                         }
                         alt="Avatar image"
                         className="w-8 h-8 rounded-full"
@@ -270,7 +270,7 @@ const ExploreScreen = () => {
                       src={
                         post?.postPic
                           ? post?.postPic
-                          : "../../public/assets/images/logo-no-background.svg"
+                          : "/assets/images/logo-no-background.svg"
                       }
                       alt="Post Image"
                       className="w-full h-full object-cover"
@@ -282,7 +282,7 @@ const ExploreScreen = () => {
                         src={
                           post?.postedBy?.profilePic
                             ? post?.postedBy?.profilePic
-                            : "../../public/assets/images/logo-no-background.svg"
+                            : "/assets/images/logo-no-background.svg"
                         }
                         alt="Avatar image"
                         className="w-8 h-8 rounded-full"

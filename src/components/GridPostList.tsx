@@ -90,7 +90,7 @@ const GridPostList = (props: any) => {
                   src={
                     post?.postPic
                       ? post?.postPic
-                      : "../../public/assets/images/logo-no-background.svg"
+                      : "/assets/images/logo-no-background.svg"
                   }
                   alt="Post Image"
                   className="w-full h-full object-cover"
@@ -103,7 +103,7 @@ const GridPostList = (props: any) => {
                     src={
                       post?.postedBy?.profilePic
                         ? post?.postedBy?.profilePic
-                        : "../../public/assets/images/logo-no-background.svg"
+                        : "/assets/images/logo-no-background.svg"
                     }
                     alt="Avatar image"
                     className="w-8 h-8 rounded-full"
@@ -130,7 +130,7 @@ const GridPostList = (props: any) => {
                   src={
                     post?.postPic
                       ? post?.postPic
-                      : "../../public/assets/images/logo-no-background.svg"
+                      : "/assets/images/logo-no-background.svg"
                   }
                   alt="Post Image"
                   className="w-full h-full object-cover"
@@ -143,7 +143,7 @@ const GridPostList = (props: any) => {
                   src={
                     post?.postedBy?.profilePic
                       ? post?.postedBy?.profilePic
-                      : "../../public/assets/images/logo-no-background.svg"
+                      : "/assets/images/logo-no-background.svg"
                   }
                   alt="Avatar image"
                   className="w-8 h-8 rounded-full"

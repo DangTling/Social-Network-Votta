@@ -4,7 +4,7 @@ const AlertCalling = ({ participant, dispatch, socket, currentUser, meetingID })
   return (
     <>
       <iframe
-        src="../../public/assets/audio/iPhone.mp3"
+        src="/assets/audio/iPhone.mp3"
         allow="autoplay"
         className="hidden"
       ></iframe>
@@ -43,7 +43,7 @@ const AlertCalling = ({ participant, dispatch, socket, currentUser, meetingID })
             </button>
             <div className="p-4 md:p-5 text-center">
               <img
-                src="../../public/assets/icons/bell.svg"
+                src="/assets/icons/bell.svg"
                 alt=""
                 className="bell mx-auto mb-4 w-12 h-12"
               />

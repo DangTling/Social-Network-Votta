@@ -34,7 +34,7 @@ const InforCommunity = ({ community }: any) => {
           <h2 className="h3-bold md:h2-bold text-left">Community Info</h2>
           <section className="px-10 flex gap-2">
             <img
-              src="../../public/assets/icons/people.svg"
+              src="/assets/icons/people.svg"
               alt="Icon community"
             />
             <p className="small-medium lg:base-medium text-light-3">
@@ -43,7 +43,7 @@ const InforCommunity = ({ community }: any) => {
           </section>
           <section className="px-10 flex gap-2">
             <img
-              src="../../public/assets/icons/world_2.svg"
+              src="/assets/icons/world_2.svg"
               alt="Icon everyone"
             />
             <p className="small-medium lg:base-medium text-light-3">
@@ -52,7 +52,7 @@ const InforCommunity = ({ community }: any) => {
           </section>
           <section className="px-10 flex gap-2">
             <img
-              src="../../public/assets/icons/Date_today.svg"
+              src="/assets/icons/Date_today.svg"
               alt="Icon time"
             />
             <p className="small-medium lg:base-medium text-light-3">
@@ -105,7 +105,7 @@ const InforCommunity = ({ community }: any) => {
                   src={
                     community.founder.profilePic
                       ? community.founder?.profilePic
-                      : "../../public/assets/images/defaultImage.png"
+                      : "/assets/images/defaultImage.png"
                   }
                   alt="user image"
                   className="h-14 w-14 rounded-full"
@@ -147,7 +147,7 @@ const InforCommunity = ({ community }: any) => {
                   src={
                     member.profilePic
                       ? member.profilePic
-                      : "../../public/assets/images/defaultImage.png"
+                      : "/assets/images/defaultImage.png"
                   }
                   alt="user image"
                   className="h-14 w-14 rounded-full"
