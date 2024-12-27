@@ -12,11 +12,11 @@ module.exports= defineConfig({
   server: {
     // host: '0.0.0.0',
     proxy: {
-      "/api": {
-        target: "http://linhdang.squifamily.com",
-        changeOrigin: true,
-        secure: false,
-      }
+      // "/api": {
+      //   target: "http://linhdang.squifamily.com",
+      //   changeOrigin: true,
+      //   secure: false,
+      // }
     },
     cors:false,
   }
