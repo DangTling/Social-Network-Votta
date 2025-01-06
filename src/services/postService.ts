@@ -9,9 +9,9 @@ export const uploadPost = async (request:any) => {
     }
 }
 
-export const getTopPosts = async ({page, size}:any) => {
+export const getTopPosts = async ({page, size, userId}:any) => {
     try {
-        const result = await axiosInstance.get(`/post/popular-post?page=${page}&size=${size}`);
+        const result = await axiosInstance.get(`/post/popular-post?page=${page}&size=${size}&userId=${userId}`);
         return result?.data
     } catch (error:any) {
         return error.response?.data || error.message;

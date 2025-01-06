@@ -29,6 +29,7 @@ const ExploreScreen = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [usersFound, setUsersFound] = useState<any[]>([]);
+  const {currentUser} = useSelector((state:any) => state.auth.login)
   const { topCreator } = useSelector((state: any) => state.post);
   const [page, setPage] = useState(1);
   const [allPage, setAllPage] = useState(0);
@@ -39,6 +40,7 @@ const ExploreScreen = () => {
   const query = {
     page: page,
     size: 6,
+    userId: currentUser.id
   };
 
   const allQuery = {
